@@ -13,7 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot' 
+apply plugin: 'spring-boot'
 
 jar {
 	baseName = 'user-service'
@@ -29,8 +29,11 @@ repositories {
 
 dependencies {
 
+	//compile group: 'org.springframework.boot', name: 'spring-boot', version: '1.5.2.RELEASE'
 	compile('org.springframework.boot:spring-boot-starter-web')
-	runtime('mysql:mysql-connector-java')
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.4.0'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.4.0'
+	compile group: 'org.springframework.ws', name: 'spring-ws-core', version: '2.4.0.RELEASE'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

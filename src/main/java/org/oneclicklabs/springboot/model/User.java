@@ -1,9 +1,7 @@
 package org.oneclicklabs.springboot.model;
 
 
-/**
- * Created by karthy on 1/23/16.
- */
+
 public class User {
 
     private long id;
